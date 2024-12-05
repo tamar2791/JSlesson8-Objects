@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin-top: 2vh;
+        }
+        body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d"></div>
+    <input type="number" placeholder="enter price" id="price" min="10" max="10000">
+    <button onclick="changefirstprice()">enter</button>
+    <input type="number" placeholder="enter count calories" id="calories" onblur="filterArr()">
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="">
+
+        <label for="mes">select type of message</label><br>
+        <select id="mes">
+            <option value="information">information</option>
+            <option value="warning">warning</option>
+            <option value="error">error</option>
+        </select><br>
+        <label for="tit">enter the title of the message</label><br>
+        <input type="text" id="tit"><br>
+        <label for="bod">enter the body of the message</label><br>
+        <textarea id="bod" cols="30" rows="10"></textarea><br>
+        <button type="button" onclick="fmessage()">submit</button>
+    </form>
+    <div id="mmm" style="width: 30vw;"></div>
+    <script src="hw8.js"></script>
+</body>
+</html>
